@@ -67,7 +67,7 @@ https://github.com/Andrey-Rya/Linux/new/main
 12.. Создать новую символическую ссылку. 
 	ln -s NewFile2 file2_link
 
-13. Переместить ссылки в другую директорию.
+13.. Переместить ссылки в другую директорию.
 	mv file2_link /tmp/ // перемещение всех файлов в директорию tmp
 	mv NewFile2 /tmp/ 
 	mv NewFile3 /tmp/
