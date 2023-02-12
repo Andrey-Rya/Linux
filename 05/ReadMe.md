@@ -1,13 +1,17 @@
-Урок 5. Настройка сети в Linux. Работа с IPtables
+**Урок 5. Настройка сети в Linux. Работа с IPtables**
 
-Задание:
+*Задание:*
 1. Настроить статическую конфигурацию (без DHCP) в Ubuntu через ip и netplan. 
    Настроить IP, маршрут по умолчанию и DNS-сервера (1.1.1.1 и 8.8.8.8). Проверить работоспособность сети.
 
 root@LINUX-VIRTUAL:/etc/netplan# sudo su
+
 	ip link set enp0s3 up
+	
 	ip addr add 192.168.0.171/255.255.255.0 dev enp0s3
+	
 	ip route add default via 192.168.0.1
+	
 	/home/vboxuser# ping ya.ru
 
 
