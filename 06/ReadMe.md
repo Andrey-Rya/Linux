@@ -1,10 +1,7 @@
 Урок 6. Запуск стека для веб-приложения
 
-Ссылка на мой репозиторий:
-https://github.com/Andrey-Rya/Linux/tree/main/06
-
 Задание:
-1. Установить Nginx и настроить его на работу с PHP-FPM..
+**1. Установить Nginx и настроить его на работу с PHP-FPM..**
 
 	sudo apt install curl //скачал curl
 
@@ -27,7 +24,7 @@ https://github.com/Andrey-Rya/Linux/tree/main/06
 
 	проверил Server API перейдя по ip/info.php(работа с файлом info.php проделал в следующем задании)
 
-2. Установить Apache. Настроить обработку PHP. Добиться одновременной работы с Nginx.
+**2. Установить Apache. Настроить обработку PHP. Добиться одновременной работы с Nginx.**
 
 	sudo apt install apache2 //установил Apache
 
@@ -70,7 +67,7 @@ https://github.com/Andrey-Rya/Linux/tree/main/06
 	//перейдя по ip/info.php увидел приветственное окно
 
 
-3. Настроить схему обратного прокси для Nginx (динамика - на Apache).
+**3. Настроить схему обратного прокси для Nginx (динамика - на Apache).**
 
 	sudo nano /etc/nginx/sites-enabled/default //открыл файл default, добавил конфигурации Nginx для Reverse proxy:
 
@@ -106,7 +103,7 @@ https://github.com/Andrey-Rya/Linux/tree/main/06
 
 	sudo systemctl reload nginx //сделал reload сервера перейдя по ip увидел приветственное окно:
 
-4. Установить MySQL. Создать новую базу данных и таблицу в ней.
+**4. Установить MySQL. Создать новую базу данных и таблицу в ней.**
 
 	sudo apt install mysql-server-8.0 //установил MySQL
 
